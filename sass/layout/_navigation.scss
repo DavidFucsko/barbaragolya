@@ -1,0 +1,23 @@
+.navigation {
+    &--horizontal {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+                float: left;
+            }
+        }
+
+    }
+
+    &__item {
+        &:not(:first-of-type) {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        margin: 1rem 0;
+    }
+}

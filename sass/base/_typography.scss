@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "AllisonScript-Regular";
+    src: url("../fonts/AllisonScript.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/AllisonScript.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/AllisonScript.otf") format("opentype"),
+        /* Open Type Font */
+        url("../fonts/AllisonScript.svg") format("svg"),
+        /* Legacy iOS */
+        url("../fonts/AllisonScript.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/AllisonScript.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/AllisonScript.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Slabo 27px";
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    color: $base-color-grey;
+}
+
+.navigation,
+.navigation--horizontal {
+    * {
+        color: $base-color-grey-light;
+    }
+}
+
+.heading {
+    h1 {
+        font-family: "AllisonScript-Regular";
+        line-height: 9.7rem;
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+        line-height: 3.7rem;
+    }
+}
