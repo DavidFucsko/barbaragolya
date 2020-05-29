@@ -1,0 +1,10 @@
+.about {
+    &__background {
+        @include skewedBackground(-8deg);
+        background-color: white;
+    }
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+}

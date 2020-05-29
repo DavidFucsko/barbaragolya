@@ -13,17 +13,123 @@
 </head>
 
 <body>
-    <nav class="navigation--horizontal row">
+    <nav id="top" class="navigation--horizontal row">
         <ul>
-            <li class="navigation__item">Rólam</li>
-            <li class="navigation__item">Időpont</li>
-            <li class="navigation__item">Kapcsolat</li>
+            <li class="navigation__item"><a href="#about"><span>Rólam</span></a></li>
+            <li class="navigation__item"><a href="#book-appointment"><span>Időpont</span></a></li>
+            <li class="navigation__item"><a href="#connect"><span>Kapcsolat</span></a></li>
+
         </ul>
     </nav>
+    <a href="#top">
+        <div class="back-to-top"></div>
+    </a>
     <main>
         <section class="heading row">
             <h1>Gólya Barbara</h1>
             <h3>Pszichológus</h3>
+        </section>
+        <section id="about" class="about">
+            <div class="about__background">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h2>Magamról</h2>
+                        <p>Gólya Barbara okleveles pszichológus, klinikai szakpszichológus jelölt vagyok.
+                            Pszichológus
+                            diplomámat az Eötvös Loránd Tudományegyetemen fejlődés-és klinikai gyermekpszichológia
+                            szakirányon szereztem.
+                            Jelenleg részt veszek a Debreceni Egyetem klinikai szakpszichológus képzésében is,
+                            valamint a
+                            Magyar Relaxációs és Szimbólumterápiás Egyesület autogén tréning módszerspecifikus
+                            végzettségével rendelkezem.
+                            Magánrendelésem mellett egy budapesti pedagógiai szakszolgálatnál dolgozom. Korábban
+                            gyermekpszichiátriai osztályon dolgoztam, pályámat családsegítő központban valamint
+                            pedagógiai
+                            szakszolgálat pszichológusaként kezdtem.
+                            Magánrendelés keretein belül elsősorban szülőkkel folytatok konzultációs munkát,
+                            valamint
+                            gyermekekkel és serdülőkkel dolgozom, folyamatos szupervízió mellett.</p>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="contact-composition">
+                            <div class="contact-composition__photo">
+                            </div>
+                            <div class="contact-composition__icon-1"></div>
+                            <div class="contact-composition__icon-2"></div>
+                            <div class="contact-composition__icon-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section book-appointment">
+            <div id="book-appointment" class="section__header row">
+                <h2>Időpont Foglalás</h2>
+            </div>
+            <div class="book-appointment__background">
+                <div class="row form">
+                    <div class="col-1-of-4 form__input">
+                        <label>Név</label>
+                        <input type="text" />
+                    </div>
+                    <div class="col-1-of-4 form__input">
+                        <label>Email</label>
+                        <input type="text" />
+                    </div>
+                    <div class="col-1-of-4 form__input">
+                        <label>Időpont</label>
+                        <input type="date" />
+                    </div>
+                    <div class="col-1-of-4 form_button">
+                        <button><a><span>Foglalás</span></a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section connect">
+            <div id="connect" class="section__header row">
+                <h2>Kapcsolat</h2>
+            </div>
+            <div class="connect__background">
+                <div class="row">
+                    <div class="col-2-of-4 connect__intro">
+                        <h2>Forduljon hozzám bizalommal</h2>
+                        <p>Leírás arról hogy mikor fogok válaszolni, milyen kérdéssel
+                            fordulhat hozzám, milyen válasszal tudok szolgálni.</p>
+                    </div>
+                    <div class="row form">
+                        <div class="col-2-of-4 form__input">
+                            <label>Keresztnév</label>
+                            <input type="text" />
+                        </div>
+                        <div class="col-2-of-4 form__input">
+                            <label>Vezetéknév</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="row form">
+                        <div class="col-2-of-4 form__input">
+                            <label>Email</label>
+                            <input type="text" />
+                        </div>
+                        <div class="col-2-of-4 form__input">
+                            <label>Telefonszám</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="row form">
+                        <div class="form__input">
+                            <label>Üzenet</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="row form">
+                        <div class="col-1-of-2 form__button">
+                            <button><a><span>Küldés</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

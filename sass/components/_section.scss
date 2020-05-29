@@ -1,0 +1,8 @@
+.section {
+    position: relative;
+
+    &__header {
+        @include verticalCenter;
+        top: -17rem;
+    }
+}

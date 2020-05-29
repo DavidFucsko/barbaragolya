@@ -18,11 +18,22 @@
     font-style: normal;
 }
 
-body {
+body,
+input,
+textarea {
     font-family: "Slabo 27px";
     font-size: 2.6rem;
     letter-spacing: 0.1rem;
     color: $base-color-grey;
+}
+
+.form {
+    button {
+        font-family: "AllisonScript-Regular";
+        font-size: 4rem;
+        letter-spacing: 0.1rem;
+        color: $base-color-grey;
+    }
 }
 
 .navigation,
@@ -45,5 +56,31 @@ body {
         font-weight: 200;
         letter-spacing: 0.2rem;
         line-height: 3.7rem;
+    }
+}
+
+.section {
+    &__header {
+        h2 {
+            color: $base-color-grey-light;
+            font-size: 2.7rem;
+            font-weight: 200;
+        }
+    }
+}
+
+.about,
+.connect {
+    h2 {
+        font-size: 2.7rem;
+        letter-spacing: 0.2rem;
+        font-weight: 200;
+        color: $base-color-grey-light;
+    }
+
+    p {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 3.5rem;
     }
 }

@@ -1,0 +1,26 @@
+.back-to-top {
+    position: fixed;
+    z-index: 2;
+    top: 90vh;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid $base-color-grey-lighter;
+    color: $base-color-grey-lighter;
+    text-align: center;
+    font-size: 2rem;
+
+    a {
+        text-decoration: none;
+        vertical-align: -50%;
+
+        &:visited {
+            color: $base-color-grey-lighter;
+        }
+    }
+
+    &:after {
+        content: ' \02C4';
+        vertical-align: -50%;
+    }
+}

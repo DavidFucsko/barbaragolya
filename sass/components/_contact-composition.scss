@@ -1,0 +1,34 @@
+.contact-composition {
+    position: relative;
+
+    &__photo {
+        position: absolute;
+        width: 25.9rem;
+        height: 37.6rem;
+        box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
+        right: 0;
+        border: 1px solid $base-color-grey-lighter;
+    }
+
+    &__icon-1 {
+        @extend %contact-icon;
+        top: 6rem;
+        left: 22.4rem;
+        background-color: $base-color-grey;
+
+    }
+
+    &__icon-2 {
+        @extend %contact-icon;
+        top: 15.2rem;
+        left: 11rem;
+        background-color: $base-color-pink-light;
+    }
+
+    &__icon-3 {
+        @extend %contact-icon;
+        top: 20rem;
+        left: 22.4rem;
+        background-color: $base-color-pink;
+    }
+}

@@ -1,5 +1,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/placeholders";
 
 @import "base/base";
 @import "base/typography";
@@ -7,3 +8,11 @@
 @import "layout/grid";
 @import "layout/navigation";
 @import "layout/heading";
+@import "layout/about";
+@import "layout/book-appointment";
+@import "layout/connect";
+
+@import "components/contact-composition";
+@import "components/form";
+@import "components/section";
+@import "components/back-to-top";

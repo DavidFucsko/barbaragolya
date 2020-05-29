@@ -8,9 +8,20 @@
 
             li {
                 float: left;
+                cursor: pointer;
             }
         }
 
+    }
+}
+
+.navigation,
+.navigation--horizontal {
+
+    a {
+        position: relative;
+        text-decoration: none;
+        @include underline(1rem)
     }
 
     &__item {

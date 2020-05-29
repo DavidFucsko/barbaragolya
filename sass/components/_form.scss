@@ -1,0 +1,42 @@
+.form {
+
+    &__input,
+    &__button {
+        min-height: 7.7rem;
+    }
+
+    input[type='text'],
+    input[type='date'] {
+        display: block;
+        border: 0;
+        border-bottom: 1px solid $base-color-grey-lighter;
+        padding: 0;
+        width: 100%;
+        background: none;
+        height: 3rem;
+    }
+
+    textarea {
+        display: block;
+        border: 1px solid $base-color-grey-lighter;
+        padding: 0;
+        width: 100%;
+        min-height: 20rem;
+        background: none;
+    }
+
+    button {
+        border: 0;
+        padding: 0;
+        background: none;
+
+        a {
+            position: relative;
+            @include underline(2rem);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
