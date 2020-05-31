@@ -43,10 +43,20 @@
     @extend %full-width;
 
 
-    transform: skewY($degree) translateX(-3rem);
+    transform: skewY($degree);
 
     &>* {
         transform: skewY(-1 * $degree);
+    }
+}
+
+@mixin paddingOnTabPort {
+    @include respond(tab-port) {
+        padding: 5rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 5rem;
     }
 }
 

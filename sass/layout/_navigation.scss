@@ -17,6 +17,7 @@
 
 .navigation,
 .navigation--horizontal {
+    @include paddingOnTabPort;
 
     a {
         position: relative;

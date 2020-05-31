@@ -8,6 +8,14 @@
         box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
         right: 0;
         border: 1px solid $base-color-grey-lighter;
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__icon-1 {
@@ -16,6 +24,17 @@
         left: 22.4rem;
         background-color: $base-color-grey;
 
+        @include respond(phone) {
+            top: -3rem;
+            right: 0rem;
+            left: auto;
+        }
+
+        @include respond(tab-port) {
+            top: -3rem;
+            right: 0rem;
+            left: auto;
+        }
     }
 
     &__icon-2 {
@@ -23,6 +42,16 @@
         top: 15.2rem;
         left: 11rem;
         background-color: $base-color-pink-light;
+
+        @include respond(phone) {
+            top: -3rem;
+            left: 0rem;
+        }
+
+        @include respond(tab-port) {
+            top: -3rem;
+            left: 0rem;
+        }
     }
 
     &__icon-3 {
@@ -30,5 +59,15 @@
         top: 20rem;
         left: 22.4rem;
         background-color: $base-color-pink;
+
+        @include respond(phone) {
+            top: -3rem;
+            left: 16.3rem;
+        }
+
+        @include respond(tab-port) {
+            top: -3rem;
+            left: 16.3rem;
+        }
     }
 }

@@ -1,5 +1,6 @@
 .heading {
     padding-bottom: 17rem;
+    @include paddingOnTabPort;
 
     h1 {
         margin-bottom: 1.8rem;
