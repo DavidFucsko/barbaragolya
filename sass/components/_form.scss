@@ -32,7 +32,7 @@
 
         a {
             position: relative;
-            @include underline(2rem);
+            @include underline(1.2rem);
         }
 
         &:hover {

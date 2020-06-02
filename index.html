@@ -13,14 +13,35 @@
 </head>
 
 <body>
-    <nav id="top" class="navigation--horizontal row">
-        <ul>
-            <li class="navigation__item"><a href="#about"><span>Rólam</span></a></li>
-            <li class="navigation__item"><a href="#book-appointment"><span>Időpont</span></a></li>
-            <li class="navigation__item"><a href="#connect"><span>Kapcsolat</span></a></li>
+    <div id="top" class="navigation">
+        <div class="navigation--mobile">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-        </ul>
-    </nav>
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="#about"><span>Rólam</span></a></li>
+                    <li class="navigation__item"><a class="navigation__link"
+                            href="#book-appointment"><span>Időpont</span></a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#connect"><span>Kapcsolat</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="navigation--desktop">
+            <nav class="navigation__nav--horizontal row">
+                <ul>
+                    <li class="navigation__item"><a href="#about"><span>Rólam</span></a></li>
+                    <li class="navigation__item"><a href="#book-appointment"><span>Időpont</span></a></li>
+                    <li class="navigation__item"><a href="#connect"><span>Kapcsolat</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <a href="#top">
         <div class="back-to-top"></div>
     </a>
@@ -153,5 +174,6 @@
         </section>
     </main>
 </body>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 </html>
