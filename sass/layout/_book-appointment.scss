@@ -1,6 +1,7 @@
 .book-appointment {
     &__background {
         @include skewedBackground(8deg);
+        @include backgroundShadow;
         background-color: $base-color-pink-light;
         margin-top: 34.7rem;
     }

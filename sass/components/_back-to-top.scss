@@ -5,8 +5,7 @@
     right: 5rem;
     width: 5rem;
     height: 5rem;
-    border: 1px solid $base-color-grey-lighter;
-    color: $base-color-grey-lighter;
+    color: $base-color-grey-light;
     text-align: center;
     font-size: 2rem;
 
@@ -20,7 +19,7 @@
     }
 
     &:after {
-        content: ' \02C4';
+        content: '\02C4';
         vertical-align: -50%;
     }
 }

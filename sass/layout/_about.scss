@@ -1,6 +1,7 @@
 .about {
     &__background {
         @include skewedBackground(-8deg);
+        @include backgroundShadow;
         background-color: white;
     }
 

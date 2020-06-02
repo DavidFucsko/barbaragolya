@@ -1,0 +1,6 @@
+.footer {
+    &__background {
+        @extend %full-width;
+        background-color: $base-color-grey-lighter;
+    }
+}

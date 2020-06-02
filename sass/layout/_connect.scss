@@ -1,6 +1,9 @@
 .connect {
+    padding-bottom: 15rem;
+
     &__background {
         @include skewedBackground(-8deg);
+        @include backgroundShadow;
         background-color: $base-color-pink;
         margin-top: 34.7rem;
     }

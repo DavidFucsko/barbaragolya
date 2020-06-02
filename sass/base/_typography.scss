@@ -43,7 +43,8 @@ textarea {
     }
 }
 
-.heading {
+.heading,
+.signature {
     h1 {
         font-family: "AllisonScript-Regular";
         line-height: 9.7rem;
@@ -59,12 +60,21 @@ textarea {
     }
 }
 
+.marketing {
+    h1 {
+        font-family: "AllisonScript-Regular";
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
 .section {
     &__header {
         h2 {
             color: $base-color-grey-light;
             font-size: 2.7rem;
             font-weight: 200;
+            text-align: center;
         }
     }
 }

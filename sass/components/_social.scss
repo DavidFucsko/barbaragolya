@@ -1,0 +1,42 @@
+.social {
+    padding: 0 0 0 6rem;
+
+    &__icon {
+        &--linkedin {
+            @extend %icon;
+            background: url('../../icons/linkedin\ \(1\).png');
+        }
+
+        &--facebook {
+            @extend %icon;
+            background: url('../../icons/facebook\ \(1\).png');
+        }
+
+        &--user {
+            @extend %icon;
+            background: url('../../icons/user.png');
+        }
+
+        &--instagram {
+            @extend %icon;
+            background: url('../../icons/instagram\ \(1\).png');
+        }
+
+        &--share {
+            @extend %icon;
+            background: url('../../icons/share.png');
+        }
+    }
+
+    %icon {
+        display: block;
+        height: 4.2rem;
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        cursor: pointer;
+
+        @include respond(tab-land) {
+            height: 6.2rem;
+        }
+    }
+}

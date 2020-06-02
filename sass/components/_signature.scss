@@ -1,0 +1,17 @@
+.signature {
+    text-align: left;
+    opacity: 0.6;
+
+    &__box {
+        position: relative;
+        width: 18%;
+        left: 82%;
+
+        @include respond(phone) {
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+            left: auto;
+        }
+    }
+}

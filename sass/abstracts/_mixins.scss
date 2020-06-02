@@ -40,9 +40,7 @@
 }
 
 @mixin skewedBackground($degree) {
-    @extend %full-width;
-
-
+    @extend %skewed-full-width;
     transform: skewY($degree);
 
     &>* {
@@ -58,6 +56,10 @@
     @include respond(tab-land) {
         padding: 5rem;
     }
+}
+
+@mixin backgroundShadow {
+    box-shadow: 0.6rem 0.8rem 4.5rem 0.3rem rgba(0, 0, 0, 0.27);
 }
 
 @mixin insideFlexBox {
