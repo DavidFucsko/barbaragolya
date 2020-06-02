@@ -3,6 +3,12 @@
     width: 10.6rem;
     height: 12.72rem;
     opacity: 0.68;
+    margin-top: 1rem;
+
+    @include respond(phone){
+        width: 8.6rem;
+        height: 10.72rem;
+    }
 }
 
 %full-width {

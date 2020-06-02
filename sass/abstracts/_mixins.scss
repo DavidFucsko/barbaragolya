@@ -60,6 +60,14 @@
     }
 }
 
+@mixin insideFlexBox {
+    @include respond(tab-port) {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone
