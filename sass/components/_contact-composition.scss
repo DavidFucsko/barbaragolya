@@ -22,10 +22,14 @@
     }
 
     &__icon {
+        @include verticalAndHorizontalCenter;
+        color: $color-white;
+        font-size: 4.5rem;
+
         &--1 {
             top: 6rem;
             left: 22.4rem;
-            background-color: $base-color-grey;
+            background-color: $base-color-grey-light;
             @extend %contact-icon;
             @include insideFlexBox;
         }
