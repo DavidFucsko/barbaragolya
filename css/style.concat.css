@@ -1818,11 +1818,11 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .navigation__nav, .navigation__nav--horizontal {
-    padding: 5rem; } }
+    padding: 5rem 2rem; } }
 
 @media only screen and (max-width: 75em) {
   .navigation__nav, .navigation__nav--horizontal {
-    padding: 5rem; } }
+    padding: 5rem 2rem; } }
 
 .navigation__nav a, .navigation__nav--horizontal a {
   position: relative;
@@ -1875,10 +1875,10 @@ textarea {
   padding-bottom: 29rem; }
   @media only screen and (max-width: 56.25em) {
     .heading {
-      padding: 5rem; } }
+      padding: 5rem 2rem; } }
   @media only screen and (max-width: 75em) {
     .heading {
-      padding: 5rem; } }
+      padding: 5rem 2rem; } }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
