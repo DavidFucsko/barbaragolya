@@ -225,7 +225,10 @@ textarea {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .navigation__item {
   margin: 1rem; }
@@ -293,11 +296,11 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .navigation__nav, .navigation__nav--horizontal {
-    padding: 5rem 2rem; } }
+    padding: 10rem 2rem; } }
 
 @media only screen and (max-width: 75em) {
   .navigation__nav, .navigation__nav--horizontal {
-    padding: 5rem 2rem; } }
+    padding: 10rem 2rem; } }
 
 .navigation__nav a, .navigation__nav--horizontal a {
   position: relative;
@@ -330,11 +333,15 @@ textarea {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__link:link span, .navigation__link:visited span {
+        margin-right: 0; } }
 
 .navigation__item {
-  margin: 1rem 0; }
-  .navigation__item:not(:first-of-type) {
-    margin: 1rem 0 1rem 2rem; }
+  margin: 1rem 2rem 1rem 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__item {
+      margin: 0; } }
 
 .navigation--mobile {
   display: none; }
@@ -350,10 +357,13 @@ textarea {
   padding-bottom: 29rem; }
   @media only screen and (max-width: 56.25em) {
     .heading {
-      padding: 5rem 2rem; } }
+      padding: 10rem 2rem; } }
   @media only screen and (max-width: 75em) {
     .heading {
-      padding: 5rem 2rem; } }
+      padding: 10rem 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading__title {
+      margin-bottom: 6rem; } }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
@@ -501,20 +511,17 @@ textarea {
   position: fixed;
   z-index: 2;
   top: 90vh;
-  right: 5rem;
+  right: 2rem;
   width: 5rem;
   height: 5rem;
-  color: #8b8b8b;
+  color: #3D3735;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 3rem; }
   .back-to-top a {
     text-decoration: none;
     vertical-align: -50%; }
     .back-to-top a:visited {
       color: rgba(52, 52, 52, 0.3); }
-  .back-to-top:after {
-    content: '\02C4';
-    vertical-align: -50%; }
 
 .signature {
   text-align: left;

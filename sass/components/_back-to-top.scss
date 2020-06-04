@@ -2,12 +2,12 @@
     position: fixed;
     z-index: 2;
     top: 90vh;
-    right: 5rem;
+    right: 2rem;
     width: 5rem;
     height: 5rem;
-    color: $base-color-grey-light;
+    color: $base-color-grey;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 
     a {
         text-decoration: none;
@@ -16,10 +16,5 @@
         &:visited {
             color: $base-color-grey-lighter;
         }
-    }
-
-    &:after {
-        content: '\02C4';
-        vertical-align: -50%;
     }
 }
