@@ -34,6 +34,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 5rem 0;
   width: 100%; }
 
+.social__icon {
+  display: block;
+  height: 4.2rem;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: 3.5rem; }
+  @media only screen and (max-width: 75em) {
+    .social__icon {
+      height: 6.2rem; } }
+
 *,
 *::after,
 *::before {
@@ -426,7 +437,7 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 4.5rem; }
+    font-size: 3.5rem; }
     .contact-composition__icon--1 {
       top: 6rem;
       left: 22.4rem;
@@ -541,26 +552,6 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
-  .social__icon--linkedin {
-    background: url("../../icons/linkedin (1).png"); }
-  .social__icon--facebook {
-    background: url("../../icons/facebook (1).png"); }
-  .social__icon--user {
-    background: url("../../icons/user.png"); }
-  .social__icon--instagram {
-    background: url("../../icons/instagram (1).png"); }
-  .social__icon--share {
-    background: url("../../icons/share.png"); }
-  .social .social__icon, .social .social__icon--linkedin, .social .social__icon--facebook, .social .social__icon--user, .social .social__icon--instagram, .social .social__icon--share {
-    display: block;
-    height: 4.2rem;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    cursor: pointer;
-    font-size: 4.5rem; }
-    @media only screen and (max-width: 75em) {
-      .social .social__icon, .social .social__icon--linkedin, .social .social__icon--facebook, .social .social__icon--user, .social .social__icon--instagram, .social .social__icon--share {
-        height: 6.2rem; } }
 
 .marketing {
   border-top: 1px solid #fff;

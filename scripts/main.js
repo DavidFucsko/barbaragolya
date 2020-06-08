@@ -20,7 +20,7 @@
     };
 
     let hideBackToTop = () => {
-        if (isInViewport(navigation)) {
+        if (isInViewport(navigation) && !!backToTopButton) {
             backToTopButton.style.display = "none";
         } else {
             backToTopButton.style.display = "block";
