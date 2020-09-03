@@ -36,6 +36,8 @@ html {
 body {
     box-sizing: border-box;
 
+    //background-image: linear-gradient(0deg, $secondary-color-grey-dark 0%, $secondary-color-grey 41%, $secondary-color-grey-light 93%);
+
     @include respond(tab-port) {
         padding: 0;
     }

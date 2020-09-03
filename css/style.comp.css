@@ -129,14 +129,16 @@ textarea {
   text-align: center; }
 
 .about h2,
-.connect h2 {
+.connect h2,
+.contact-information h2 {
   font-size: 2.7rem;
   letter-spacing: 0.2rem;
   font-weight: 200;
   color: #8b8b8b; }
 
 .about p,
-.connect p {
+.connect p,
+.contact-information p {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   line-height: 3.5rem; }
@@ -145,7 +147,7 @@ textarea {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 1rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
@@ -158,7 +160,8 @@ textarea {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    float: left; }
+    float: left;
+    min-height: 1rem; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {
@@ -168,6 +171,8 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
+  .row .col-1-of-1 {
+    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -360,12 +365,16 @@ textarea {
     .navigation--mobile {
       display: block; } }
 
-@media only screen and (max-width: 56.25em) {
-  .navigation--desktop {
-    display: none; } }
+.navigation--desktop {
+  background-color: white; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation--desktop {
+      display: none; } }
 
 .heading {
-  padding-bottom: 29rem; }
+  padding-bottom: 29rem;
+  background-size: auto;
+  position: relative; }
   @media only screen and (max-width: 56.25em) {
     .heading {
       padding: 10rem 2rem; } }
@@ -375,6 +384,17 @@ textarea {
   @media only screen and (max-width: 56.25em) {
     .heading__title {
       margin-bottom: 6rem; } }
+  .heading__image {
+    position: absolute;
+    width: 158.66rem;
+    height: 63rem;
+    top: 0;
+    left: -268px;
+    overflow: hidden;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(../../photos/Barbi_main4.png);
+    z-index: -1; }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
@@ -413,6 +433,21 @@ textarea {
 .footer__background {
   background-color: rgba(52, 52, 52, 0.3); }
 
+.contact-information__background {
+  margin-top: 34.7rem; }
+
+.contact-information__informations {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: white;
+  box-shadow: 0 0 4.08rem rgba(0, 0, 0, 0.2); }
+
+.contact-information__element {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem; }
+
 .contact-composition {
   position: relative; }
   @media only screen and (max-width: 56.25em) {
@@ -427,7 +462,9 @@ textarea {
     height: 37.6rem;
     box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
     right: 0;
-    border: 1px solid rgba(52, 52, 52, 0.3); }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../photos/drive-download-20200831T102154Z-001/ok_Golya_Barbara-7602_retus.jpg); }
     @media only screen and (max-width: 56.25em) {
       .contact-composition__photo {
         display: none; } }
@@ -558,3 +595,7 @@ textarea {
   opacity: 0.6;
   padding-left: 2rem;
   padding-top: 5rem; }
+
+.map {
+  height: 42rem;
+  width: 100%; }

@@ -1,0 +1,19 @@
+.contact-information {
+    &__background {
+        margin-top: 34.7rem;
+    }
+
+    &__informations {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        background-color: white;
+        box-shadow: 0 0 4.08rem rgba(0, 0, 0, 0.2);
+    }
+
+    &__element {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0 2rem;
+    }
+}

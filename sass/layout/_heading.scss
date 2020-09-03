@@ -1,11 +1,25 @@
 .heading {
     padding-bottom: 29rem;
     @include paddingOnTabPort;
+    background-size: auto;
+    position: relative;
 
     &__title {
         @include respond(tab-port) {
             margin-bottom: 6rem;
         }
+    }
+
+    &__image {
+        position: absolute;width: 158.66rem;
+        height: 63rem;
+        top: 0;
+        left: -268px;
+        overflow: hidden;
+        background-size: 104%;
+        background-repeat: no-repeat;
+        background-image: url(../../photos/Barbi_main4.png);
+        z-index: -1;
     }
 
     h1 {

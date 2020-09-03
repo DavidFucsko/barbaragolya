@@ -31,11 +31,15 @@
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link"
-                            href="#book-appointment">
-                            <span>Időpont</span>
+                        <a class="navigation__link" href="#contact-information">
+                            <span>Elérhetőségek</span>
                         </a>
                     </li>
+                    <!-- <li class="navigation__item">
+                        <a class="navigation__link" href="#book-appointment">
+                            <span>Időpont</span>
+                        </a>
+                    </li> -->
                     <li class="navigation__item">
                         <a class="navigation__link" href="#connect">
                             <span>Kapcsolat</span>
@@ -48,8 +52,10 @@
         <div class="navigation--desktop">
             <nav class="navigation__nav--horizontal row">
                 <ul>
+                    <link rel="import" href="/menu-items.html">
                     <li class="navigation__item"><a href="#about"><span>Rólam</span></a></li>
-                    <li class="navigation__item"><a href="#book-appointment"><span>Időpont</span></a></li>
+                    <li class="navigation__item"><a href="#contact-information"><span>Elérhetőségek</span></a></li>
+                    <!-- <li class="navigation__item"><a href="#book-appointment"><span>Időpont</span></a></li> -->
                     <li class="navigation__item"><a href="#connect"><span>Kapcsolat</span></a></li>
                 </ul>
             </nav>
@@ -64,6 +70,7 @@
                 <h1>Gólya Barbara</h1>
                 <h3>Pszichológus</h3>
             </div>
+            <div class="heading__image"></div>
         </section>
         <section id="about" class="about">
             <div class="about__background">
@@ -113,7 +120,32 @@
                 </div>
             </div>
         </section>
-        <section class="section book-appointment">
+        <section class="section contact-information">
+            <div id="contact-information" class="section__header row">
+                <h2 data-aos="fade-up">Elérhetőségek</h2>
+            </div>
+            <div class="contact-information__background">
+                <div id="map" class="map"></div>
+                <div class="row">
+                    <div class="contact-information__informations">
+                        <div class="contact-information__element">
+                            <h2>Cím</h2>
+                            <p>1133 Budapest</p>
+                            <p>Angyalföldi út 20</p>
+                        </div>
+                        <div class="contact-information__element">
+                            <h2>Telefonszám</h2>
+                            <p>+36 30 123 4567</p>
+                        </div>
+                        <div class="contact-information__element">
+                            <h2>Email cím</h2>
+                            <p>valaki@valami.hu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section book-appointment">
             <div id="book-appointment" class="section__header row">
                 <h2 data-aos="fade-up">Időpontfoglalás</h2>
             </div>
@@ -136,7 +168,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section connect">
             <div id="connect" class="section__header row">
                 <h2 data-aos="fade-up">Kapcsolat</h2>
@@ -207,13 +239,20 @@
                         <i class="icon-twitter"></i>
                     </span>
                 </div>
-                <div class="marketing">
+                <!-- <div class="marketing">
                     <h1>Design: Fucsi</h1>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
 </body>
-<script type="text/javascript" src="scripts/main.js"></script>
+<script type="module">
+    import startup from '/scripts/main.js';
+    startup.initialize();
+</script>
+<script
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc4nw3hYR772IAiI5bo1U4l1dCFujL0xI&callback=initMap">
+    </script>
 
 </html>
