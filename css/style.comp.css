@@ -441,7 +441,8 @@ textarea {
   top: 10%;
   right: 5%;
   background-color: white;
-  box-shadow: 0 0 4.08rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 4.08rem rgba(0, 0, 0, 0.2);
+  opacity: 0.9; }
 
 .contact-information__element {
   margin-top: 1rem;
