@@ -1,4 +1,8 @@
 .map {
-    height: 42rem;
+    height: 59rem;
     width: 100%;
+
+    @include respond(tab-port) {
+        height: 85rem;
+    }
 }

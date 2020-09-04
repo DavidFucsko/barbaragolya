@@ -1,6 +1,11 @@
 .heading {
-    padding-bottom: 29rem;
+    padding-bottom: 35.2rem;
     @include paddingOnTabPort;
+
+    @include respond(phone) {
+        padding-top: 1rem;
+    }
+
     background-size: auto;
     position: relative;
 
@@ -8,18 +13,29 @@
         @include respond(tab-port) {
             margin-bottom: 6rem;
         }
+
+        @include respond(phone) {
+            margin-bottom: 15rem;
+        }
     }
 
     &__image {
-        position: absolute;
-        width: 158.66rem;
-        height: 63rem;
-        top: 0;
-        left: -268px;
-        overflow: hidden;
-        background-size: 104%;
-        background-repeat: no-repeat;
-        z-index: -1;
+        &--desktop {
+            @extend %heading__image;
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            @extend %heading__image;
+            display: none;
+
+            @include respond(phone) {
+                display: block;
+            }
+        }
     }
 
     h1 {

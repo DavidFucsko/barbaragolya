@@ -858,7 +858,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .about__background, .book-appointment__background, .connect__background {
   width: 100%;
-  padding: 15rem 5rem; }
+  padding: 12rem 5rem; }
 
 .footer__background {
   padding: 5rem 0;
@@ -874,6 +874,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @media only screen and (max-width: 75em) {
     .social__icon {
       height: 6.2rem; } }
+
+.heading__image--desktop, .heading__image--mobile {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  height: auto; }
 
 *,
 *::after,
@@ -923,11 +930,25 @@ textarea {
   letter-spacing: 0.1rem;
   color: #3D3735; }
 
+.form ::placeholder {
+  color: #8b8b8b;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 0.2rem; }
+
 .form button {
   font-family: "AllisonScript-Regular";
   font-size: 4rem;
   letter-spacing: 0.1rem;
   color: #3D3735; }
+
+.form__input label {
+  color: #8b8b8b;
+  font-size: 2rem; }
+
+.form__input input,
+.form__input textarea {
+  font-size: 2rem; }
 
 .navigation *,
 .navigation--horizontal * {
@@ -946,6 +967,10 @@ textarea {
   font-weight: 200;
   letter-spacing: 0.2rem;
   line-height: 3.7rem; }
+
+.signature h1,
+.signature h3 {
+  font-size: 4rem; }
 
 .marketing h1 {
   font-family: "AllisonScript-Regular";
@@ -985,6 +1010,10 @@ textarea {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .row {
+      max-width: 46rem;
+      padding: 0; } }
   .row::after {
     content: "";
     display: table;
@@ -1202,7 +1231,7 @@ textarea {
       display: none; } }
 
 .heading {
-  padding-bottom: 29rem;
+  padding-bottom: 35.2rem;
   background-size: auto;
   position: relative; }
   @media only screen and (max-width: 56.25em) {
@@ -1211,20 +1240,23 @@ textarea {
   @media only screen and (max-width: 75em) {
     .heading {
       padding: 10rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading {
+      padding-top: 1rem; } }
   @media only screen and (max-width: 56.25em) {
     .heading__title {
       margin-bottom: 6rem; } }
-  .heading__image {
-    position: absolute;
-    width: 158.66rem;
-    height: 63rem;
-    top: 0;
-    left: -268px;
-    overflow: hidden;
-    background-size: 104%;
-    background-repeat: no-repeat;
-    background-image: url(../../photos/Barbi_main4.png);
-    z-index: -1; }
+  @media only screen and (max-width: 37.5em) {
+    .heading__title {
+      margin-bottom: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading__image--desktop {
+      display: none; } }
+  .heading__image--mobile {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__image--mobile {
+        display: block; } }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
@@ -1292,10 +1324,9 @@ textarea {
     width: 25.9rem;
     height: 37.6rem;
     box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
-    right: 0;
+    left: 28rem;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../../photos/drive-download-20200831T102154Z-001/ok_Golya_Barbara-7602_retus.jpg); }
+    background-repeat: no-repeat; }
     @media only screen and (max-width: 56.25em) {
       .contact-composition__photo {
         display: none; } }
@@ -1428,5 +1459,8 @@ textarea {
   padding-top: 5rem; }
 
 .map {
-  height: 42rem;
+  height: 59rem;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .map {
+      height: 85rem; } }

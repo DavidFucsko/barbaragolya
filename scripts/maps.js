@@ -14,6 +14,5 @@ let initMap = () => {
         title: 'Kaméleon',
         //icon: image,
     });
-    console.log('zoom: ', map.getZoom());
 }
 export default initMap;

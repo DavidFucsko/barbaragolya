@@ -13,7 +13,7 @@
 
 %skewed-full-width {
     width: 100%;
-    padding: 15rem 5rem;
+    padding: 12rem 5rem;
 }
 
 %full-width {
@@ -32,4 +32,12 @@
     @include respond(tab-land) {
         height: 6.2rem;
     }
+}
+
+%heading__image {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: auto;
 }
