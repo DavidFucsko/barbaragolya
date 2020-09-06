@@ -10,8 +10,8 @@
         @include respond(phone) {
             width: 50%;
             height: 50%;
-            margin: 0 auto;
-            left: auto;
+            left: 50%;
+            transform: translateX(-85%);
         }
     }
 }

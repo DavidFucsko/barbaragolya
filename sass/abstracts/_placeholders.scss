@@ -24,6 +24,7 @@
 %icon {
     display: block;
     height: 4.2rem;
+    max-width: 4.2rem;
     background-repeat: no-repeat;
     opacity: 0.6;
     cursor: pointer;
@@ -31,13 +32,17 @@
 
     @include respond(tab-land) {
         height: 6.2rem;
+        max-width: 6.2rem;
     }
 }
 
 %heading__image {
     position: absolute;
     overflow: hidden;
+    transform: translateX(-50%);
+    left: 50%;
     z-index: -1;
-    width: 100%;
+    max-width: 158.3rem;
     height: auto;
+    width: 100%;
 }

@@ -867,20 +867,25 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .social__icon {
   display: block;
   height: 4.2rem;
+  max-width: 4.2rem;
   background-repeat: no-repeat;
   opacity: 0.6;
   cursor: pointer;
   font-size: 3.5rem; }
   @media only screen and (max-width: 75em) {
     .social__icon {
-      height: 6.2rem; } }
+      height: 6.2rem;
+      max-width: 6.2rem; } }
 
 .heading__image--desktop, .heading__image--mobile {
   position: absolute;
   overflow: hidden;
+  transform: translateX(-50%);
+  left: 50%;
   z-index: -1;
-  width: 100%;
-  height: auto; }
+  max-width: 158.3rem;
+  height: auto;
+  width: 100%; }
 
 *,
 *::after,
@@ -1072,7 +1077,7 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      right: 2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -1091,7 +1096,7 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
-      right: 3.5rem; } }
+      right: 2.5rem; } }
 
 .navigation__list {
   position: absolute;
@@ -1122,7 +1127,7 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: -2;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -1132,7 +1137,8 @@ textarea {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  z-index: 1500; }
 
 .navigation__icon {
   position: relative;
@@ -1146,11 +1152,11 @@ textarea {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
@@ -1204,7 +1210,7 @@ textarea {
   text-decoration: none;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -1256,7 +1262,8 @@ textarea {
     display: none; }
     @media only screen and (max-width: 37.5em) {
       .heading__image--mobile {
-        display: block; } }
+        display: block;
+        max-width: 55rem; } }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
@@ -1444,13 +1451,13 @@ textarea {
       .signature__box {
         width: 50%;
         height: 50%;
-        margin: 0 auto;
-        left: auto; } }
+        left: 50%;
+        transform: translateX(-85%); } }
 
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
 
 .marketing {
   border-top: 1px solid #fff;
