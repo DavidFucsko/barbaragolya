@@ -1383,7 +1383,8 @@ textarea {
   padding: 0;
   width: 100%;
   background: none;
-  height: 3rem; }
+  height: 3rem;
+  margin-bottom: 4rem; }
 
 .form textarea {
   display: block;

@@ -1,4 +1,5 @@
 import initMap from './maps.js';
+import sendEmail from './sendEmail.js';
 
 let startup = (function () {
     return {
@@ -45,8 +46,10 @@ let startup = (function () {
                 duration: 1200
             });
 
-            window.initMap = initMap;
+            const contactForm = document.querySelector('#contact-form');
+            contactForm.addEventListener('submit', sendEmail)
 
+            window.initMap = initMap;
         }
     }
 })();
