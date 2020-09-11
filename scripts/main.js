@@ -17,8 +17,8 @@ let startup = (function () {
                 return (
                     bounding.top >= 0 &&
                     bounding.left >= 0 &&
-                    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                    && bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
                 );
             };
 
@@ -34,7 +34,7 @@ let startup = (function () {
 
             window.addEventListener('scroll', () => {
                 hideBackToTop();
-            });
+            }, { passive: true });
 
             navigationItems.forEach(item => {
                 item.addEventListener('click', () => {

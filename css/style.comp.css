@@ -95,7 +95,8 @@ body {
   src: url("../fonts/AllisonScript.eot?#iefix") format("embedded-opentype"), url("../fonts/AllisonScript.otf") format("opentype"), url("../fonts/AllisonScript.svg") format("svg"), url("../fonts/AllisonScript.ttf") format("truetype"), url("../fonts/AllisonScript.woff") format("woff"), url("../fonts/AllisonScript.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 body,
 input,
