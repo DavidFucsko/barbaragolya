@@ -8,8 +8,6 @@ let sendEmail = (event) => {
         }
         return previous
     }, {});
-
-    console.log(json);
     let xhttp = new XMLHttpRequest();
     xhttp.open("POST", requestUrl, true);
     xhttp.setRequestHeader('Content-Type', 'application/json');
