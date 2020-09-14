@@ -65,9 +65,16 @@
         <i class="icon-chevron_up back-to-top"></i>
     </a>
     <main>
-        <img src="photos/Golya_Barbara_Banner.webp" class="heading__image--desktop"></img>
-        <img src="photos/Golya_Barbara_Banner_mobile.webp"
-            class="heading__image--mobile"></img>
+        <picture class="heading__image--desktop">
+            <source srcset="photos/Golya_Barbara_Banner.webp" type="image/webp">
+            <source srcset="photos/Golya_Barbara_Banner.png" type="image/png">
+            <img src="photos/Golya_Barbara_Banner.png"></img>
+        </picture>
+        <picture>
+            <source srcset="photos/Golya_Barbara_Banner_mobile.webp" type="image/webp">
+            <source srcset="photos/Golya_Barbara_Banner_mobile.png" type="image/png">
+            <img src="photos/Golya_Barbara_Banner_mobile.png" class="heading__image--mobile"></img>
+        </picture>
         <section class="heading row">
             <div class="heading__title">
                 <h1>Gólya Barbara</h1>
@@ -108,9 +115,11 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="contact-composition">
-                            <img src="photos/Golya_Barbara_contact.webp"
-                                class="contact-composition__photo">
-                            </img>
+                            <picture>
+                                <source srcset="photos/Golya_Barbara_contact.webp" type="image/webp">
+                                <source srcset="photos/Golya_Barbara_contact.png" type="image/png">
+                                <img class="contact-composition__photo" src="photos/Golya_Barbara_contact.webp"></img>
+                            </picture>
                             <a href="#contact-information">
                                 <div class="contact-composition__icon--1" data-aos="fade-down"><i
                                         class="icon-smartphone contact-composition__icon"></i>
