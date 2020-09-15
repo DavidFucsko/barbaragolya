@@ -8,6 +8,14 @@
     color: $base-color-grey;
     text-align: center;
     font-size: 3rem;
+    background-color: white;
+    border-radius: 50%;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        color: $base-color-grey;
+    }
 
     a {
         text-decoration: none;
