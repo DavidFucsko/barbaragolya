@@ -4,10 +4,13 @@ import sendEmail from './sendEmail.js';
 let startup = (function () {
     return {
         initialize: () => {
-            let navigationItems = document.querySelectorAll('.navigation__item');
-            let closeNavigationButton = document.querySelector('.navigation__checkbox');
-            let navigation = document.querySelector('.navigation--desktop');
-            let backToTopButton = document.querySelector('.back-to-top');
+            const navigationItems = document.querySelectorAll('.navigation__item');
+            const closeNavigationButton = document.querySelector('.navigation__checkbox');
+            const navigation = document.querySelector('.navigation--desktop');
+            const backToTopButton = document.querySelector('.back-to-top');
+            const newMessage = document.querySelector('.connect__form--completed button[type="button"]');
+            const contatcForm = document.querySelector('.connect__form');
+            const completedContactForm = document.querySelector('.connect__form--completed');
 
             let closeNavigation = () => {
                 closeNavigationButton.checked = false;
@@ -40,6 +43,16 @@ let startup = (function () {
                 item.addEventListener('click', () => {
                     closeNavigation();
                 });
+            });
+
+            newMessage.addEventListener('click', () => {
+                completedContactForm.classList.remove('fade-in');
+                contatcForm.classList.remove('fade-out');
+                contatcForm.classList.add('fade-in');
+                contatcForm.style.display = 'block';
+                setTimeout(() => {
+                    completedContactForm.style.display = 'none';
+                }, 1000);
             });
 
             AOS.init({

@@ -155,8 +155,6 @@
 
     &__nav,
     &__nav--horizontal {
-        @include paddingOnTabPort;
-
         a {
             position: relative;
             text-decoration: none;

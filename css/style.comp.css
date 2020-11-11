@@ -26,7 +26,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 10.72rem;
       margin-top: 1rem; } }
 
-.about__background, .book-appointment__background, .connect__background {
+.book-appointment__background, .connect__background {
   width: 100%;
   padding: 12rem 5rem; }
 
@@ -44,7 +44,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 2.5rem; }
   @media only screen and (max-width: 75em) {
     .social__icon {
-      height: 6.2rem;
       max-width: 6.2rem; } }
 
 .heading__image--desktop, .heading__image--mobile {
@@ -53,9 +52,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   transform: translateX(-50%);
   left: 50%;
   z-index: -1;
-  max-width: 158.3rem;
-  height: auto;
-  width: 100%; }
+  max-width: 158.3rem; }
 
 *,
 *::after,
@@ -106,24 +103,29 @@ textarea {
   letter-spacing: 0.1rem;
   color: #3D3735; }
 
-.form ::placeholder {
+.form ::placeholder,
+.connect__form--completed ::placeholder {
   color: #8b8b8b;
   font-size: 1.5rem;
   padding-top: 0.5rem;
   padding-left: 0.2rem; }
 
-.form button {
+.form button,
+.connect__form--completed button {
   font-family: "AllisonScript-Regular";
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
   color: #3D3735; }
 
-.form__input label {
+.form__input label,
+.connect__form--completed__input label {
   color: #8b8b8b;
   font-size: 1.5rem; }
 
 .form__input input,
-.form__input textarea {
+.form__input textarea,
+.connect__form--completed__input input,
+.connect__form--completed__input textarea {
   font-size: 1.5rem; }
 
 .navigation *,
@@ -136,6 +138,14 @@ textarea {
   line-height: 9.7rem;
   font-size: 6rem;
   font-weight: 100; }
+  @media only screen and (max-width: 37.5em) {
+    .heading h1,
+    .signature h1 {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 17.5em) {
+    .heading h1,
+    .signature h1 {
+      font-size: 4.5rem; } }
 
 .heading h3,
 .signature h3 {
@@ -143,6 +153,10 @@ textarea {
   font-weight: 200;
   letter-spacing: 0.2rem;
   line-height: 3.7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading h3,
+    .signature h3 {
+      font-size: 1.5rem; } }
 
 .signature h1,
 .signature h3 {
@@ -177,11 +191,9 @@ textarea {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 1rem; }
-    @media only screen and (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row:not(:last-child) {
+      margin-bottom: 4rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -202,7 +214,7 @@ textarea {
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -346,14 +358,6 @@ textarea {
   top: 0;
   transform: rotate(-135deg); }
 
-@media only screen and (max-width: 56.25em) {
-  .navigation__nav, .navigation__nav--horizontal {
-    padding: 10rem 2rem; } }
-
-@media only screen and (max-width: 75em) {
-  .navigation__nav, .navigation__nav--horizontal {
-    padding: 10rem 2rem; } }
-
 .navigation__nav a, .navigation__nav--horizontal a {
   position: relative;
   text-decoration: none; }
@@ -420,12 +424,17 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .heading {
       padding-top: 1rem; } }
+  @media only screen and (max-width: 75em) {
+    .heading {
+      margin-bottom: 17rem; } }
   @media only screen and (max-width: 56.25em) {
     .heading__title {
-      margin-bottom: 6rem; } }
+      margin-bottom: 6rem;
+      margin-right: 13rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading__title {
-      margin-bottom: 15rem; } }
+      margin-bottom: 15rem;
+      margin-right: 0; } }
   @media only screen and (max-width: 37.5em) {
     .heading__image--desktop {
       display: none; } }
@@ -435,22 +444,36 @@ textarea {
       .heading__image--mobile {
         display: block;
         max-width: 55rem; } }
+  .heading__image-container {
+    position: absolute;
+    width: 100%;
+    height: 100rem;
+    overflow: hidden; }
   .heading h1 {
     margin-bottom: 1.8rem; }
 
 .about__background {
-  transform: skewY(-8deg);
-  box-shadow: 0.6rem 0.8rem 4.5rem 0.3rem rgba(0, 0, 0, 0.27);
-  background-color: white; }
-  .about__background > * {
-    transform: skewY(8deg); }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  background-color: white;
+  padding: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about__background {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); } }
+  @media only screen and (max-width: 37.5em) {
+    .about__background {
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%); } }
+  @media only screen and (max-width: 17.5em) {
+    .about__background {
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); } }
+  .about__background--container {
+    filter: drop-shadow(0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.14)); }
 
 .about h2 {
   margin-bottom: 3rem; }
 
 .book-appointment__background {
   transform: skewY(8deg);
-  box-shadow: 0.6rem 0.8rem 4.5rem 0.3rem rgba(0, 0, 0, 0.27);
+  box-shadow: 0rem 0.3rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
   background-color: #E7CFC8;
   margin-top: 34.7rem; }
   .book-appointment__background > * {
@@ -460,7 +483,7 @@ textarea {
   padding-bottom: 15rem; }
   .connect__background {
     transform: skewY(-8deg);
-    box-shadow: 0.6rem 0.8rem 4.5rem 0.3rem rgba(0, 0, 0, 0.27);
+    box-shadow: 0rem 0.3rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
     background-color: #E6C6BC;
     margin-top: 34.7rem; }
     .connect__background > * {
@@ -469,6 +492,42 @@ textarea {
     margin-bottom: 5rem; }
     .connect__intro h2 {
       margin-bottom: 3rem; }
+  .connect__form {
+    opacity: 100%; }
+    .connect__form.fade-out {
+      animation-name: fade-out;
+      animation-duration: 1s;
+      animation-fill-mode: forwards; }
+    .connect__form.fade-in {
+      animation-name: fade-out;
+      animation-duration: 1s;
+      animation-direction: reverse;
+      animation-fill-mode: forwards; }
+    .connect__form--completed {
+      display: none;
+      opacity: 0; }
+      .connect__form--completed.fade-in {
+        animation-name: fade-out;
+        animation-duration: 1s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+        min-height: 60rem; }
+      .connect__form--completed button {
+        border: 0;
+        padding: 0;
+        background: none; }
+
+@keyframes fade-out {
+  from {
+    opacity: 100%; }
+  to {
+    opacity: 0; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 100%; } }
 
 .footer__background {
   background-color: rgba(52, 52, 52, 0.3); }
@@ -635,7 +694,11 @@ textarea {
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0 24rem; }
+  @media only screen and (max-width: 37.5em) {
+    .social {
+      margin: 0 6rem; } }
 
 .marketing {
   border-top: 1px solid #fff;

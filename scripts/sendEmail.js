@@ -12,5 +12,15 @@ let sendEmail = (event) => {
     xhttp.open("POST", requestUrl, true);
     xhttp.setRequestHeader('Content-Type', 'application/json');
     xhttp.send(JSON.stringify(json));
+    let contatcForm = document.querySelector('.connect__form');
+    let completedContactForm = document.querySelector('.connect__form--completed');
+    contatcForm.classList.add('fade-out');
+    setTimeout(() => { contatcForm.style.display = 'none'; completedContactForm.style.display = 'block'; }, 200);
+    completedContactForm.classList.add('fade-in');
+    xhttp.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            console.log(this);
+        }
+    }
 }
 export default sendEmail;

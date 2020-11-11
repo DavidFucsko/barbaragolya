@@ -31,7 +31,8 @@ textarea {
     color: $base-color-grey;
 }
 
-.form {
+.form,
+.connect__form--completed {
 
     ::placeholder {
         color: $base-color-grey-light;
@@ -72,11 +73,24 @@ textarea {
     h1 {
         font-family: "AllisonScript-Regular";
         line-height: 9.7rem;
+
+        @include respond(phone) {
+            font-size: $phone-large;
+        }
+
+        @include respond(mini-phone) {
+            font-size: $phone-mini;
+        }
+
         font-size: $large-font;
         font-weight: 100;
     }
 
     h3 {
+        @include respond(phone) {
+            font-size: $small-font;
+        }
+
         font-size: $normal-font;
         font-weight: 200;
         letter-spacing: 0.2rem;

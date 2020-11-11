@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 24rem;
+
+    @include respond(phone) {
+        margin: 0 6rem;
+    }
 
     &__icon {
         @extend %icon;

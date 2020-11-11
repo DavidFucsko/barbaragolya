@@ -31,7 +31,6 @@
     font-size: 2.5rem;
 
     @include respond(tab-land) {
-        height: 6.2rem;
         max-width: 6.2rem;
     }
 }
@@ -43,6 +42,4 @@
     left: 50%;
     z-index: -1;
     max-width: 158.3rem;
-    height: auto;
-    width: 100%;
 }

@@ -39,11 +39,11 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin verticalAndHorizontalCenter{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+@mixin verticalAndHorizontalCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin skewedBackground($degree) {
@@ -66,7 +66,11 @@
 }
 
 @mixin backgroundShadow {
-    box-shadow: 0.6rem 0.8rem 4.5rem 0.3rem rgba(0, 0, 0, 0.27);
+    box-shadow: 0rem .3rem .5rem 0rem rgba(0, 0, 0, 0.14);
+}
+
+@mixin backgroundDropShadow {
+    filter: drop-shadow(0rem .3rem .5rem rgba(0, 0, 0, 0.14));
 }
 
 @mixin insideFlexBox {
@@ -96,6 +100,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
+    @if $breakpoint==mini-phone {
+        @media only screen and (max-width: 17.5em) {
+            @content
+        }
+
+        ; //280px
+    }
+
     @if $breakpoint==phone {
         @media only screen and (max-width: 37.5em) {
             @content
