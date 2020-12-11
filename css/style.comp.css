@@ -22,8 +22,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   opacity: 0.95; }
   @media only screen and (max-width: 37.5em) {
     .contact-composition__icon--1, .contact-composition__icon--2, .contact-composition__icon--3 {
-      width: 8.6rem;
-      height: 10.72rem;
+      width: 7.6rem;
+      height: 9.72rem;
       margin-top: 1rem; } }
 
 .about__background, .book-appointment__background, .connect__background {
@@ -41,7 +41,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-repeat: no-repeat;
   opacity: 0.6;
   cursor: pointer;
-  font-size: 2.5rem; }
+  font-size: 3.5rem; }
   @media only screen and (max-width: 75em) {
     .social__icon {
       max-width: 6.2rem; } }
@@ -112,10 +112,13 @@ textarea {
 
 .form button,
 .connect__form--completed button {
-  font-family: "AllisonScript-Regular";
-  font-size: 3.5rem;
+  font-family: "Slabo 27px";
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   color: #3D3735; }
+  .form button[disabled],
+  .connect__form--completed button[disabled] {
+    color: #8b8b8b; }
 
 .form__input label,
 .connect__form--completed__input label {
@@ -508,7 +511,8 @@ textarea {
       .connect__form--completed button {
         border: 0;
         padding: 0;
-        background: none; }
+        background: none;
+        cursor: pointer; }
 
 @keyframes fade-out {
   from {
@@ -540,6 +544,8 @@ textarea {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0 2rem; }
+  .contact-information__element a {
+    text-decoration: none; }
 
 .contact-composition {
   position: relative; }
@@ -561,10 +567,11 @@ textarea {
       .contact-composition__photo {
         display: none; } }
   .contact-composition__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     color: #fff;
     font-size: 3.5rem; }
     .contact-composition__icon--1 {
@@ -578,7 +585,7 @@ textarea {
           left: auto; } }
     .contact-composition__icon--2 {
       top: 15.2rem;
-      left: 11rem;
+      left: 10rem;
       background-color: #E7CFC8; }
       @media only screen and (max-width: 56.25em) {
         .contact-composition__icon--2 {
@@ -594,12 +601,15 @@ textarea {
           position: relative;
           top: auto;
           left: auto; } }
+  .contact-composition a {
+    text-decoration: none; }
 
 .form__input, .form__button {
   min-height: 7.7rem; }
 
 .form input[type='text'],
-.form input[type='date'] {
+.form input[type='date'],
+.form input[type='email'] {
   display: block;
   border: 0;
   border-bottom: 1px solid rgba(52, 52, 52, 0.3);
@@ -620,7 +630,8 @@ textarea {
 .form button {
   border: 0;
   padding: 0;
-  background: none; }
+  background: none;
+  margin-top: 2rem; }
   .form button a {
     position: relative; }
     .form button a::before {
@@ -639,6 +650,8 @@ textarea {
       transform: scaleX(1); }
   .form button:hover {
     cursor: pointer; }
+  .form button[disabled] {
+    cursor: not-allowed; }
 
 .section {
   position: relative; }
@@ -663,7 +676,8 @@ textarea {
   .back-to-top::before {
     display: inline-block;
     vertical-align: middle;
-    color: #3D3735; }
+    color: #3D3735;
+    margin-top: 1.5rem; }
   .back-to-top a {
     text-decoration: none;
     vertical-align: -50%; }
@@ -692,6 +706,11 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .social {
       margin: 0 6rem; } }
+  .social a {
+    text-decoration: none;
+    color: #3D3735; }
+    .social a:visited, .social a:hover, .social a:active {
+      color: #3D3735; }
 
 .marketing {
   border-top: 1px solid #fff;

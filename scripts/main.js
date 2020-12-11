@@ -9,6 +9,8 @@ let startup = (function () {
             const navigation = document.querySelector('.navigation--desktop');
             const backToTopButton = document.querySelector('.back-to-top');
             const newMessage = document.querySelector('.connect__form--completed button[type="button"]');
+            const sendMessage = document.querySelector("form[name='contact-form'] button[type='submit']");
+            const emailInput = document.querySelector("form[name='contact-form'] input[name='contactEmailAddress']");
             const contatcForm = document.querySelector('.connect__form');
             const completedContactForm = document.querySelector('.connect__form--completed');
 
@@ -55,6 +57,10 @@ let startup = (function () {
                 }, 1000);
             });
 
+            emailInput.addEventListener('input', () => {
+                sendMessage.disabled = emailIsValid(emailInput.value) ? false : true;
+            });
+
             AOS.init({
                 duration: 1200
             });
@@ -66,5 +72,9 @@ let startup = (function () {
         }
     }
 })();
+
+let emailIsValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
 
 export default startup;

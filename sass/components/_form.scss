@@ -6,7 +6,8 @@
     }
 
     input[type='text'],
-    input[type='date'] {
+    input[type='date'],
+    input[type='email'] {
         display: block;
         border: 0;
         border-bottom: 1px solid $base-color-grey-lighter;
@@ -30,6 +31,7 @@
         border: 0;
         padding: 0;
         background: none;
+        margin-top: 2rem;
 
         a {
             position: relative;
@@ -38,6 +40,10 @@
 
         &:hover {
             cursor: pointer;
+        }
+
+        &[disabled] {
+            cursor: not-allowed;
         }
     }
 }

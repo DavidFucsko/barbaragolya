@@ -1,19 +1,6 @@
 .about {
     &__background {
         @include skewedBackground(8deg);
-        // clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-
-        // @include respond(tab-port) {
-        //     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-        // }
-
-        // @include respond(phone) {
-        //     clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
-        // }
-
-        // @include respond(mini-phone) {
-        //     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-        // }
 
         background-color: white;
         padding: 10rem;

@@ -42,10 +42,14 @@ textarea {
     }
 
     button {
-        font-family: "AllisonScript-Regular";
-        font-size: $big-font;
+        font-family: "Slabo 27px";
+        font-size: $normal-font;
         letter-spacing: 0.1rem;
         color: $base-color-grey;
+
+        &[disabled] {
+            color: $base-color-grey-light;
+        }
     }
 
     &__input {

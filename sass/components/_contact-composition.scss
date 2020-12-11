@@ -23,7 +23,12 @@
     }
 
     &__icon {
-        @include verticalAndHorizontalCenter;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
         color: $color-white;
         font-size: 3.5rem;
 
@@ -37,7 +42,7 @@
 
         &--2 {
             top: 15.2rem;
-            left: 11rem;
+            left: 10rem;
             background-color: $base-color-pink-light;
             @extend %contact-icon;
             @include insideFlexBox;
@@ -50,5 +55,9 @@
             @extend %contact-icon;
             @include insideFlexBox;
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 }
