@@ -26,7 +26,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 10.72rem;
       margin-top: 1rem; } }
 
-.book-appointment__background, .connect__background {
+.about__background, .book-appointment__background, .connect__background {
   width: 100%;
   padding: 12rem 5rem; }
 
@@ -453,18 +453,11 @@ textarea {
     margin-bottom: 1.8rem; }
 
 .about__background {
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  transform: skewY(8deg);
   background-color: white;
   padding: 10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .about__background {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); } }
-  @media only screen and (max-width: 37.5em) {
-    .about__background {
-      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%); } }
-  @media only screen and (max-width: 17.5em) {
-    .about__background {
-      clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); } }
+  .about__background > * {
+    transform: skewY(-8deg); }
   .about__background--container {
     filter: drop-shadow(0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.14)); }
 
