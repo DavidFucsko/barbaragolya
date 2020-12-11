@@ -545,7 +545,10 @@ textarea {
   margin-bottom: 1rem;
   padding: 0 2rem; }
   .contact-information__element a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3D3735; }
+    .contact-information__element a:visited, .contact-information__element a:hover, .contact-information__element a:active {
+      color: #3D3735; }
 
 .contact-composition {
   position: relative; }

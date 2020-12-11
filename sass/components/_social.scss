@@ -14,9 +14,9 @@
 
     a {
         text-decoration: none;
-        color: #3D3735;
+        color: $base-color-grey;
         &:visited, &:hover, &:active {
-            color: #3D3735;
+            color: $base-color-grey
         }
     }
 }

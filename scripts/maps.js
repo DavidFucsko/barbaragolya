@@ -4,7 +4,7 @@ let initMap = () => {
     //var image = './icon.png';
     var rendelo = { lat: 47.529765, lng: 19.067288 };
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
+        zoom: 15,
         center: rendelo,
         styles: config
     });

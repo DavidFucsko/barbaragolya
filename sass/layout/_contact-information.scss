@@ -17,8 +17,12 @@
         margin-bottom: 1rem;
         padding: 0 2rem;
 
-        a{
+        a {
             text-decoration: none;
+            color: $base-color-grey;
+            &:visited, &:hover, &:active {
+                color: $base-color-grey
+            }
         }
     }
 }
