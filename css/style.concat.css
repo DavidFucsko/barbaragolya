@@ -621,13 +621,13 @@ textarea {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between; } }
+      justify-content: space-around; } }
   .contact-composition__photo {
     position: absolute;
     width: 25.9rem;
     height: 37.6rem;
     box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
-    left: 28rem;
+    left: 20rem;
     background-size: cover;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 56.25em) {
@@ -643,7 +643,7 @@ textarea {
     font-size: 3.5rem; }
     .contact-composition__icon--1 {
       top: 6rem;
-      left: 22.4rem;
+      left: 14.4rem;
       background-color: #8b8b8b; }
       @media only screen and (max-width: 56.25em) {
         .contact-composition__icon--1 {
@@ -652,7 +652,7 @@ textarea {
           left: auto; } }
     .contact-composition__icon--2 {
       top: 15.2rem;
-      left: 10rem;
+      left: 2rem;
       background-color: #E7CFC8; }
       @media only screen and (max-width: 56.25em) {
         .contact-composition__icon--2 {
@@ -661,7 +661,7 @@ textarea {
           left: auto; } }
     .contact-composition__icon--3 {
       top: 20rem;
-      left: 22.4rem;
+      left: 14.4rem;
       background-color: #E6C6BC; }
       @media only screen and (max-width: 56.25em) {
         .contact-composition__icon--3 {

@@ -5,7 +5,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     &__photo {
@@ -13,7 +13,7 @@
         width: 25.9rem;
         height: 37.6rem;
         box-shadow: 2.38rem 3.6rem 4.08rem rgba(0, 0, 0, 0.2);
-        left: 28rem;
+        left: 20rem;
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -34,7 +34,7 @@
 
         &--1 {
             top: 6rem;
-            left: 22.4rem;
+            left: 14.4rem;
             background-color: $base-color-grey-light;
             @extend %contact-icon;
             @include insideFlexBox;
@@ -42,7 +42,7 @@
 
         &--2 {
             top: 15.2rem;
-            left: 10rem;
+            left: 2rem;
             background-color: $base-color-pink-light;
             @extend %contact-icon;
             @include insideFlexBox;
@@ -50,7 +50,7 @@
 
         &--3 {
             top: 20rem;
-            left: 22.4rem;
+            left: 14.4rem;
             background-color: $base-color-pink;
             @extend %contact-icon;
             @include insideFlexBox;
